@@ -2,36 +2,33 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Payment Platform</title>
+    <title>Banking Demo Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1>Payment Platform</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Send Money</a></li>
-            <li><a href="#">Request Money</a></li>
-            <li class="right">
-              <a href="#">Settings</a>
-              <a href="#">Profile</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <h1>Banking Demo Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="balance">
-          <h2>USD Balance:</h2>
-          <p>$0.00</p>
-        </div>
-        <div class="buttons">
-          <button class="send-money">Send Money</button>
-          <button class="request-money">Request Money</button>
-        </div>
-      </div>
+      <h2>Welcome to Our Banking Demo Website</h2>
+      <p>Here you can learn about the different services we offer and how you can manage your finances with ease.</p>
+      <form>
+        <label for="account-number">Account Number:</label>
+        <input type="text" id="account-number" name="account-number">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Login">
+      </form>
     </main>
+    <footer>
+      <p>&copy; 2023 Banking Demo Website</p>
+    </footer>
   </body>
 </html>
