@@ -13,6 +13,10 @@ header {
 .container {
   max-width: 960px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 nav ul {
@@ -25,3 +29,34 @@ nav ul {
 
 nav ul li a {
   color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.right a:last-child {
+  margin-left: 20px;
+}
+
+.balance {
+  margin-top: 50px;
+}
+
+.balance h2 {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.send-money, .request-money {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: blue;
+  color: #fff;
+  margin: 0 20px;
+  cursor: pointer;
+}
