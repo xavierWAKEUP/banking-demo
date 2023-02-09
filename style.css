@@ -7,56 +7,64 @@ body {
 header {
   background-color: #333;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+header h1 {
+  margin: 0;
 }
 
-nav ul {
+header nav ul {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
-nav ul li a {
+header nav a {
   color: #fff;
   text-decoration: none;
-  padding: 10px;
-  display: block;
+  padding: 20px;
 }
 
-.right a:last-child {
-  margin-left: 20px;
-}
-
-.balance {
-  margin-top: 50px;
-}
-
-.balance h2 {
-  margin-bottom: 20px;
-}
-
-.buttons {
-  margin-top: 50px;
+main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-.send-money, .request-money {
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: blue;
-  color: #fff;
-  margin: 0 20px;
-  cursor: pointer;
+form {
+  background-color: #eee;
+  border: 1px solid #333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 500px;
 }
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding:
