@@ -8,19 +8,19 @@
 <body>
 	<h1>Banking Demo</h1>
 	<div id="login-form">
-		<form action="dashboard.php" method="post">
+		<form>
 			<label for="account_number">Account Number:</label>
 			<input type="text" id="account_number" name="account_number">
 			<br><br>
 			<label for="password">Password:</label>
 			<input type="password" id="password" name="password">
 			<br><br>
-			<input type="submit" value="Submit">
+			<input type="button" value="Submit" onclick="showDashboard()">
 		</form>
 	</div>
 	<div id="dashboard" style="display: none;">
 		<h2>Dashboard</h2>
-		<p>Balance: <span id="balance"></span></p>
+		<p>Balance: <span id="balance">$1,000</span></p>
 		<h3>Last Transactions</h3>
 		<table id="transactions">
 			<thead>
@@ -31,7 +31,16 @@
 				</tr>
 			</thead>
 			<tbody id="transactions-body">
-				
+				<tr>
+					<td>01/01/2023</td>
+					<td>Paycheck</td>
+					<td>$2,000</td>
+				</tr>
+				<tr>
+					<td>01/02/2023</td>
+					<td>Rent</td>
+					<td>$1,000</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
